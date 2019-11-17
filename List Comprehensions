@@ -16,7 +16,7 @@ Problem Statement:
   Sample Output:
     [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
 
-Python3 Code and Output:
+Python3 Code:
 
   X = int(input())
   Y = int(input())
@@ -25,7 +25,7 @@ Python3 Code and Output:
   ans = [[i, j, k] for i in range(X + 1) for j in range(Y + 1) for k in range(Z + 1) if i + j + k != N]
   print (ans)
 
-Python3 Code and Output:
+Python3 Output:
   2
   2
   2
