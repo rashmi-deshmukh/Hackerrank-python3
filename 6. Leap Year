@@ -21,7 +21,7 @@ Problem Statement:
   Sample Output: False
   Explanation: 1990 is not a multiple of 4 hence it's not a leap year.
 
-Python Code:
+**Python Code:**
   def is_leap(year):
     leap = False
     if (year%4==0):
