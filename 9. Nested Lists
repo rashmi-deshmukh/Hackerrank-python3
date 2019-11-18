@@ -21,3 +21,14 @@ Problem Statement:
      
 Python Code:
   
+import sys
+if __name__ == '__main__':
+    l=[]
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        l.append([name,score])
+    n=len(l)
+    print(n)
+    max=sys.maxint
+    print(max)
