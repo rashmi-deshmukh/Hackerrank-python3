@@ -49,9 +49,12 @@ if __name__ == '__main__':
     for i in range(n):
         if (l[i][1] >= fmax):
             fmax = l[i][1]
-        if ((l[i][1] < fmax) | (l[i][1] >= smax)):
-            smax= l[i][1]
-        elif ((l[i][1] < fmax) | (l[i][1] <= smax)):
-            smax= l[i][1]
-    print(fmax)
-    print(smax)
+        for i in range(i+1, n):
+            if(smax<fmax):
+                if ((l[i][1] < fmax) | (l[i][1] >= smax)):
+                    smax= l[i][1]
+                    ans=l[i][0]
+                elif ((l[i][1] < fmax) | (l[i][1] <= smax)):
+                    smax= l[i][1]
+                    ans=l[i][0]
+    print(ans)
