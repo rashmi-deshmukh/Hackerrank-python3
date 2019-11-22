@@ -32,3 +32,26 @@ if __name__ == '__main__':
     print(n)
     max=sys.maxint
     print(max)
+
+
+
+import sys
+if __name__ == '__main__':
+    l=[]
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        l.append([name,score])
+    n=len(l)
+    print(n)
+    fmax=l[0][1]
+    smax=l[1][1]
+    for i in range(n):
+        if (l[i][1] >= fmax):
+            fmax = l[i][1]
+        if ((l[i][1] < fmax) | (l[i][1] >= smax)):
+            smax= l[i][1]
+        elif ((l[i][1] < fmax) | (l[i][1] <= smax)):
+            smax= l[i][1]
+    print(fmax)
+    print(smax)
